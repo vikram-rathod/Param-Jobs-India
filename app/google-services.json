@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "231560626406",
+    "project_id": "paramjobsindia",
+    "storage_bucket": "paramjobsindia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231560626406:android:e50391dfd88c282b87bb27",
+        "android_client_info": {
+          "package_name": "com.app.paramjobsindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231560626406-uoe06ucf501dsnu73hi5p6jubf52hgbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl0BTcTOYjPPc83bvH976OoPx0K4qSmiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231560626406-uoe06ucf501dsnu73hi5p6jubf52hgbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

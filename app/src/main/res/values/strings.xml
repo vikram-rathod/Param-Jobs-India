@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Param Jobs India</string>
+    <string name="permissionDenied">Permission Denied</string>
+    <string name="default_notification_channel_id" >fcm_default</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="todo">TODO</string>
+    <string name="todoimg">TODO</string>
+
+
+</resources>

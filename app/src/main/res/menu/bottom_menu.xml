@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:enabled="true">
+
+
+    <item android:id="@+id/homebottom"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    </group>
+
+    <item android:id="@+id/jobsbottom"
+        android:title="Jobs"
+        android:icon="@drawable/ic_baseline_shopping_bag_24"/>
+
+    <item android:id="@+id/catagorybottom"
+        android:title="Catagory"
+        android:icon="@drawable/ic_baseline_groups_24"/>
+
+    <item android:id="@+id/signinbottom"
+        android:title="Sign In"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
+
+</menu>

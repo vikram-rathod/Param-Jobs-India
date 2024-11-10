@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+        <group android:id="@+id/gp1">
+
+                <item android:id="@+id/chomeside"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Home"/>
+        </group>
+        <group android:id="@+id/gp5">
+                <item android:id="@+id/cjobsside"
+                    android:icon="@drawable/ic_baseline_shopping_bag_24"
+                    android:title="Search Jobs"/>
+
+        </group>
+        <group android:id="@+id/gp6">
+                <item android:id="@+id/ccatagoryside"
+                    android:icon="@drawable/ic_baseline_groups_24"
+                    android:title="Catagory" />
+        </group>
+
+        <group android:id="@+id/gp8">
+                <item android:id="@+id/cappliedjoblistside"
+                    android:icon="@drawable/ic_baseline_list_24"
+                    android:title="Applied Job List" />
+
+        </group>
+
+        <group android:id="@+id/gp11">
+                <item android:id="@+id/craeside"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    android:title="Refer and Earn" />
+        </group>
+        <group android:id="@+id/gp10">
+                <item android:id="@+id/cshreside"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="Share" />
+        </group>
+        <group android:id="@+id/gp9">
+                <item android:id="@+id/clogoutside"
+                    android:title="Logout"
+                    android:icon="@drawable/ic_baseline_logout_24"/>
+
+        </group>
+</menu>

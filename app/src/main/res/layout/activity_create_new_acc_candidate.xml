@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateNewAccCandidateActivity"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_light"
+        android:id="@+id/toolbarcreateaccnt"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Create Account"
+        app:titleTextColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/lightteal"
+            android:text="Create Account"
+            android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="left"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        android:text="Your Mobile Number"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/mobno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:background="@drawable/edittextdesign"
+                android:layout_marginHorizontal="30dp"
+                android:layout_weight="6"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:hint="Enter Your mobile number"
+                tools:ignore="TextFields" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="30dp"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="2">
+            <RadioGroup
+                android:id="@+id/create_acc_rgb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/create_acc_candidaterb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="I am Job Seeker"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="10dp" />
+                <RadioButton
+                    android:id="@+id/create_acc_companyrb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="I am Company"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"/>
+            </RadioGroup>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/gonext"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/nextbutton" />
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/lightteal"
+            android:text="We have sent an otp to your mobile  "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mobnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/lightteal"
+            android:text="mob number"
+            android:textStyle="bold" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="35dp"
+                android:textColor="@color/lightteal"
+                android:text="Do not refresh or close! "
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/otpcandidatecreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextdesign"
+            android:hint="Enter Otp"
+            android:inputType="number"
+            android:layout_marginHorizontal="30dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+        <LinearLayout
+            android:id="@+id/timmerlayoutcreateacc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="3"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="5dp"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:text="Wait for a minute "-->
+<!--                android:textStyle="bold" />-->
+
+            <TextView
+                android:id="@+id/countdowntimmercreateacc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="Time"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/createcanbtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:minHeight="35dp"
+            android:text="Create Account"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:enabled="false"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/alreadyaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:padding="5dp"
+
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/lightteal"
+            android:text="I have already account."
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</LinearLayout>

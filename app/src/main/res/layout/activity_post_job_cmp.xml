@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostJobCmpActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_light"
+            android:id="@+id/toolbaraddeq"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="Post Job"
+            app:titleTextColor="@color/white"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+
+            <EditText
+                android:id="@+id/jbtit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:background="@drawable/editback"            android:gravity="left"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:hint="Job Title *" />
+
+
+
+            <EditText
+                android:id="@+id/jbloc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editback"
+                android:inputType="textMultiLine"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:hint="Enter Location *" />
+
+
+
+            <Spinner
+                android:id="@+id/jbtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:inputType="number"
+                android:background="@drawable/editback"
+                android:gravity="left"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:hint="Job Type *" />
+
+
+
+            <EditText
+                android:id="@+id/jbsal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editback"
+                android:inputType="number"
+                android:gravity="left"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:hint="Enter Salary *" />
+
+
+
+
+            <Spinner
+                android:id="@+id/seledc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="10"
+                android:background="@drawable/editback"
+                android:gravity="left"
+                android:hint="Select Qualification "
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/jbedu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/editback"
+                android:gravity="left"
+                android:hint="Enter Education"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/ivdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editback"                android:gravity="left"
+                android:layout_margin="10dp"
+                style="?android:spinnerStyle"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Interview Date *"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:onClick="opendialogue"
+                />
+
+            <!--on below line we are creating a
+        button for date picker-->
+            <Button
+                android:id="@+id/ivtm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editback"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:gravity="left"
+                android:hint="Interview Time *"
+                android:textAllCaps="false" />
+
+
+
+
+
+            <EditText
+                android:id="@+id/nopening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editback"
+                android:inputType="number"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:hint="Number of Openings *" />
+
+            <Button
+                android:id="@+id/upimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editback"                android:gravity="left"
+                android:layout_margin="10dp"
+                style="?android:spinnerStyle"
+                android:ems="10"
+                android:hint="Upload Image"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <RelativeLayout
+                android:id="@+id/rlayoutact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_uactivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="50dp"
+                    android:background="@color/white" />
+
+                <ImageView
+                    android:id="@+id/imgcl_uactivity"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="60dp"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_baseline_close_24" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/jbdesc"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/editback"
+                android:inputType="textMultiLine"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:hint="Job Description *" />
+
+            <Spinner
+                android:id="@+id/jbst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:inputType="number"
+                android:background="@drawable/editback"
+                android:gravity="left"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:hint="Job Status" />
+
+
+            <Button
+                android:id="@+id/jbsmt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btndesign"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

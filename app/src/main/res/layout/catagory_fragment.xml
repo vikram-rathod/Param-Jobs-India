@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical">
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:background="@color/purple_custom">-->
+
+        <!--            <com.mancj.materialsearchbar.MaterialSearchBar-->
+        <!--                style="@style/MaterialSearchBarLight"-->
+        <!--                app:mt_speechMode="true"-->
+        <!--                app:mt_hint="Search Jobs"-->
+        <!--                app:mt_maxSuggestionsCount="10"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                app:mt_placeholder="Search Jobs"-->
+        <!--                android:id="@+id/searchBarcatagory" />-->
+
+        <!--        </LinearLayout>-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:layout_margin="2dp">-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                android:layout_width="80dp"-->
+        <!--                android:layout_height="80dp"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:clickable="true"-->
+        <!--                android:focusable="true"-->
+        <!--                android:foreground="?attr/selectableItemBackground"-->
+        <!--                app:cardCornerRadius="10dp">-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:layout_margin="5dp">-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        app:srcCompat="@drawable/itpro" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="IT Jobs"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        android:gravity="center"-->
+        <!--                        android:textSize="11dp"-->
+        <!--                        android:layout_marginTop="5dp"-->
+        <!--                        android:textColor="@color/black" />-->
+
+        <!--                </LinearLayout>-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                android:layout_width="80dp"-->
+        <!--                android:layout_height="80dp"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:clickable="true"-->
+        <!--                android:focusable="true"-->
+        <!--                android:foreground="?attr/selectableItemBackground"-->
+        <!--                app:cardCornerRadius="10dp">-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:layout_margin="5dp">-->
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        app:srcCompat="@drawable/bank" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="Bank Jobs"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        android:gravity="center"-->
+        <!--                        android:textSize="11dp"-->
+        <!--                        android:layout_marginTop="5dp"-->
+        <!--                        android:textColor="@color/black" />-->
+        <!--                </LinearLayout>-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                android:layout_width="80dp"-->
+        <!--                android:layout_height="80dp"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:clickable="true"-->
+        <!--                android:focusable="true"-->
+        <!--                android:foreground="?attr/selectableItemBackground"-->
+        <!--                app:cardCornerRadius="10dp">-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:layout_margin="5dp">-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        app:srcCompat="@drawable/sale" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="Sales Jobs"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        android:gravity="center"-->
+        <!--                        android:textSize="11dp"-->
+        <!--                        android:layout_marginTop="5dp"-->
+        <!--                        android:textColor="@color/black" />-->
+
+        <!--                </LinearLayout>-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                android:layout_width="80dp"-->
+        <!--                android:layout_height="80dp"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:clickable="true"-->
+        <!--                android:focusable="true"-->
+        <!--                android:foreground="?attr/selectableItemBackground"-->
+        <!--                app:cardCornerRadius="10dp">-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:layout_margin="5dp">-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        app:srcCompat="@drawable/hr" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="HR Jobs"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        android:gravity="center"-->
+        <!--                        android:textSize="11dp"-->
+        <!--                        android:layout_marginTop="5dp"-->
+        <!--                        android:textColor="@color/black" />-->
+
+        <!--                </LinearLayout>-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--        </LinearLayout>-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:layout_margin="2dp">-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+
+        <!--                android:layout_width="80dp"-->
+        <!--                android:layout_height="80dp"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:clickable="true"-->
+        <!--                android:focusable="true"-->
+        <!--                android:foreground="?attr/selectableItemBackground"-->
+        <!--                app:cardCornerRadius="10dp">-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:layout_margin="5dp">-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        app:srcCompat="@drawable/itpro" />-->
+
+        <!--                    <TextView-->
+
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="IT Jobs"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        android:gravity="center"-->
+        <!--                        android:textSize="11dp"-->
+        <!--                        android:layout_marginTop="5dp"-->
+        <!--                        android:textColor="@color/black" />-->
+
+        <!--                </LinearLayout>-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+
+        <!--                android:layout_width="80dp"-->
+        <!--                android:layout_height="80dp"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:clickable="true"-->
+        <!--                android:focusable="true"-->
+        <!--                android:foreground="?attr/selectableItemBackground"-->
+        <!--                app:cardCornerRadius="10dp">-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:layout_margin="5dp">-->
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        app:srcCompat="@drawable/bank" />-->
+
+        <!--                    <TextView-->
+
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="Bank Jobs"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        android:gravity="center"-->
+        <!--                        android:textSize="11dp"-->
+        <!--                        android:layout_marginTop="5dp"-->
+        <!--                        android:textColor="@color/black" />-->
+        <!--                </LinearLayout>-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+
+        <!--                android:layout_width="80dp"-->
+        <!--                android:layout_height="80dp"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:clickable="true"-->
+        <!--                android:focusable="true"-->
+        <!--                android:foreground="?attr/selectableItemBackground"-->
+        <!--                app:cardCornerRadius="10dp">-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:layout_margin="5dp">-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        app:srcCompat="@drawable/sale" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="Sales Jobs"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        android:gravity="center"-->
+        <!--                        android:textSize="11dp"-->
+        <!--                        android:layout_marginTop="5dp"-->
+        <!--                        android:textColor="@color/black" />-->
+
+        <!--                </LinearLayout>-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                android:layout_width="80dp"-->
+        <!--                android:layout_height="80dp"-->
+        <!--                android:layout_margin="5dp"-->
+        <!--                android:clickable="true"-->
+        <!--                android:focusable="true"-->
+        <!--                android:foreground="?attr/selectableItemBackground"-->
+        <!--                app:cardCornerRadius="10dp">-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:layout_margin="5dp">-->
+
+        <!--                    <ImageView-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="50dp"-->
+        <!--                        app:srcCompat="@drawable/hr" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="HR Jobs"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        android:gravity="center"-->
+        <!--                        android:textSize="11dp"-->
+        <!--                        android:layout_marginTop="5dp"-->
+        <!--                        android:textColor="@color/black" />-->
+
+        <!--                </LinearLayout>-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--        </LinearLayout>-->
+
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@color/white"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

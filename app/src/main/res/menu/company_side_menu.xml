@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+        <group android:id="@+id/gp1">
+
+                <item android:id="@+id/cmphmeside"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Home"/>
+        </group>
+        <group android:id="@+id/gp2">
+                <item android:id="@+id/cmpjobsside"
+                    android:icon="@drawable/ic_baseline_shopping_bag_24"
+                    android:title="Search Jobs"/>
+
+        </group>
+
+        <group android:id="@+id/gp5">
+                <item android:id="@+id/cmppostjobs"
+                    android:icon="@drawable/ic_baseline_list_24"
+                    android:title="Post Job" />
+
+        </group>
+        <group android:id="@+id/gp6">
+                <item android:id="@+id/cmppostedjblistside"
+                    android:icon="@drawable/ic_baseline_list_24"
+                    android:title="Posted Job List" />
+
+        </group>
+
+        <group android:id="@+id/gp3">
+                <item android:id="@+id/cmpcatagoryside"
+                    android:icon="@drawable/ic_baseline_groups_24"
+                    android:title="Catagory" />
+
+        </group>
+        <group android:id="@+id/gp7">
+                <item android:id="@+id/cmpappliedjoblistside"
+                    android:icon="@drawable/ic_baseline_list_24"
+                    android:title="Applied Job List" />
+
+        </group>
+
+        <group android:id="@+id/gp9">
+                <item android:id="@+id/cmpreferside"
+                    android:title="Refer and Earn"
+                    android:icon="@drawable/ic_baseline_list_24"/>
+        </group>
+        <group android:id="@+id/gp10">
+                <item android:id="@+id/cmpshareside"
+                    android:title="Share"
+                    android:icon="@drawable/ic_baseline_share_24"/>
+        </group>
+        <group android:id="@+id/gp8">
+                <item android:id="@+id/cmplogoutside"
+                    android:title="Logout"
+                    android:icon="@drawable/ic_baseline_logout_24"/>
+
+        </group>
+
+</menu>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="2dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardlayout"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/jbimage"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:srcCompat="@drawable/noimage"
+                    app:civ_border_color="#E7A3F3"
+                    app:civ_border_width="1dp"
+                    />
+
+                <TextView
+                    android:id="@+id/jobcat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IT Jobs"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:ems="3"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExecutiveActivities.AddeqActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_light"
+            android:id="@+id/toolbaraddeq"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="Add Enquiry"
+            app:titleTextColor="@color/white"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+
+            <EditText
+                android:id="@+id/custnm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:background="@drawable/editback"            android:gravity="left"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:hint="Customer Name *" />
+
+
+
+            <EditText
+                android:id="@+id/bsnm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editback"
+                android:inputType="textMultiLine"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:hint="Business Name" />
+
+
+
+            <EditText
+                android:id="@+id/custmn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:inputType="number"
+                android:background="@drawable/editback"
+                android:gravity="left"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:hint="Customer Mobile Number *" />
+
+
+
+            <EditText
+                android:id="@+id/custeid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editback"
+                android:inputType="textMultiLine"
+                android:gravity="left"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:hint="Email Id" />
+
+
+            <EditText
+                android:id="@+id/csadd"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="10"
+                android:background="@drawable/editback"
+                android:inputType="textMultiLine"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:hint="Customer Address" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/bscatid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="10"
+                android:background="@drawable/editback"
+                android:gravity="left"
+                android:hint="Business Catagory "
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+
+
+            <Spinner
+                android:id="@+id/flmdid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:background="@drawable/editback"
+                android:inputType="textMultiLine"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:hint="Followup mode" />
+            <Button
+                android:id="@+id/date_pickr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editback"                android:gravity="left"
+                android:layout_margin="10dp"
+                style="?android:spinnerStyle"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Followup Date"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+
+                />
+
+
+
+
+            <EditText
+                android:id="@+id/fldesc"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/editback"
+                android:inputType="textMultiLine"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:hint="Followup Description" />
+
+            <Button
+                android:id="@+id/smt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btndesign"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+        <group android:id="@+id/gp1">
+
+                <item android:id="@+id/homeside"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Home"/>
+
+        </group>
+        <group android:id="@+id/gp2">
+
+                <item android:id="@+id/jobsside"
+                    android:icon="@drawable/ic_baseline_shopping_bag_24"
+                    android:title="Jobs"/>
+
+        </group>
+        <group android:id="@+id/gp3">
+                <item android:id="@+id/catagoryside"
+                    android:icon="@drawable/ic_baseline_groups_24"
+                    android:title="Catagory" />
+
+        </group>
+        <group android:id="@+id/gp4">
+                <item android:id="@+id/profileside"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    android:title="Create Profile" />
+
+
+        </group>
+</menu>

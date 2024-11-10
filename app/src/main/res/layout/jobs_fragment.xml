@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_margin="8dp"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="1dp">
+
+                <SearchView
+                    android:id="@+id/searchBarjob"
+                    style="@style/MaterialSearchBarLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="Search Jobs"
+                    app:mt_hint="Search Jobs"
+                    app:mt_maxSuggestionsCount="10"
+                    app:mt_placeholder="Search Jobs"
+                    app:mt_speechMode="true" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+
+            android:text="Sales and Marketing"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvjobsales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="Bank Office"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv6jobsbank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp" />
+
+
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="10dp"-->
+        <!--            android:background="@color/white"-->
+        <!--            android:layout_marginTop="20dp"/>-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:text="Admin / Office Assistant"-->
+        <!--            android:textColor="@color/purple_custom"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--                <HorizontalScrollView-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content">-->
+
+        <!--                    <LinearLayout-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginHorizontal="8dp"-->
+
+        <!--                        android:orientation="horizontal">-->
+
+
+        <!--                    <androidx.cardview.widget.CardView-->
+        <!--                    android:layout_width="170dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    app:cardCornerRadius="2dp"-->
+        <!--                        android:layout_marginRight="10dp"-->
+        <!--                        android:layout_marginLeft="10dp">-->
+        <!--                    <LinearLayout-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:orientation="vertical"-->
+        <!--                        android:layout_margin="5dp">-->
+
+
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="₹15000/-"-->
+        <!--                            android:textSize="16dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:padding="5dp"-->
+        <!--                            android:textColor="@color/black"/>-->
+
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="match_parent"-->
+        <!--                            android:text="Admin Executive"-->
+        <!--                            android:textSize="16dp"-->
+        <!--                            android:ems="3"-->
+        <!--                            android:ellipsize="end"-->
+        <!--                            android:lines="1"-->
+        <!--                            android:padding="5dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:textColor="@color/black"/>-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Company name"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            />-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text=" city name"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            android:drawableStart="@drawable/ic_baseline_warehouse_24"-->
+
+        <!--                            />-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Fresher"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            android:drawableStart="@drawable/ic_baseline_star_outline_24"-->
+
+        <!--                            />-->
+        <!--                        <Button-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Apply"-->
+        <!--                            android:minHeight="10dp"-->
+        <!--                            android:textColor="@color/white"-->
+        <!--                            android:textAllCaps="false"-->
+        <!--                            android:background="@drawable/btndesign"-->
+        <!--                            android:layout_margin="10dp"-->
+        <!--                            android:padding="5dp"/>-->
+
+        <!--                    </LinearLayout>-->
+        <!--                </androidx.cardview.widget.CardView>-->
+
+        <!--            </LinearLayout>-->
+
+        <!--        </HorizontalScrollView>-->
+
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="10dp"-->
+        <!--            android:background="@color/white"-->
+        <!--            android:layout_marginTop="20dp"/>-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:text="Cook / Chef / Baker"-->
+        <!--            android:textColor="@color/purple_custom"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <HorizontalScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginHorizontal="8dp"-->
+
+        <!--                android:orientation="horizontal">-->
+
+
+        <!--                <androidx.cardview.widget.CardView-->
+        <!--                    android:layout_width="170dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    app:cardCornerRadius="2dp"-->
+        <!--                    android:padding="5dp"-->
+        <!--                    android:layout_marginRight="10dp"-->
+        <!--                    android:layout_marginLeft="10dp">-->
+        <!--                    <LinearLayout-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:orientation="vertical"-->
+        <!--                        android:layout_margin="5dp">-->
+
+
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="₹15000/-"-->
+        <!--                            android:textSize="16dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:padding="5dp"-->
+        <!--                            android:textColor="@color/black"/>-->
+
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="match_parent"-->
+        <!--                            android:text="Cook / Chef"-->
+        <!--                            android:textSize="16dp"-->
+        <!--                            android:ems="3"-->
+        <!--                            android:ellipsize="end"-->
+        <!--                            android:lines="1"-->
+        <!--                            android:padding="5dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:textColor="@color/black"/>-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Company name"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            />-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text=" city name"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            android:drawableStart="@drawable/ic_baseline_warehouse_24"-->
+
+        <!--                            />-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Fresher"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            />-->
+        <!--                        <Button-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Apply"-->
+        <!--                            android:minHeight="10dp"-->
+        <!--                            android:textColor="@color/white"-->
+        <!--                            android:textAllCaps="false"-->
+        <!--                            android:background="@drawable/btndesign"-->
+        <!--                            android:layout_margin="10dp"-->
+        <!--                            android:padding="5dp"/>-->
+
+        <!--                    </LinearLayout>-->
+        <!--                </androidx.cardview.widget.CardView>-->
+
+        <!--            </LinearLayout>-->
+
+        <!--        </HorizontalScrollView>-->
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="10dp"-->
+        <!--            android:background="@color/white"-->
+        <!--            android:layout_marginTop="20dp"/>-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:text="Digital / Online Marketing"-->
+        <!--            android:textColor="@color/purple_custom"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <HorizontalScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginHorizontal="8dp"-->
+
+        <!--                android:orientation="horizontal">-->
+
+
+        <!--                <androidx.cardview.widget.CardView-->
+        <!--                    android:layout_width="170dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    app:cardCornerRadius="2dp"-->
+        <!--                    android:padding="5dp"-->
+        <!--                    android:layout_marginRight="10dp"-->
+        <!--                    android:layout_marginLeft="10dp">-->
+        <!--                    <LinearLayout-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:orientation="vertical"-->
+        <!--                        android:layout_margin="5dp">-->
+
+
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="₹10000/-"-->
+        <!--                            android:textSize="16dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:padding="5dp"-->
+        <!--                            android:textColor="@color/black"/>-->
+
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="match_parent"-->
+        <!--                            android:text="Digital Marketing Executive"-->
+        <!--                            android:textSize="16dp"-->
+        <!--                            android:ems="3"-->
+        <!--                            android:ellipsize="end"-->
+        <!--                            android:lines="1"-->
+        <!--                            android:padding="5dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:textColor="@color/black"/>-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Company name"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            />-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text=" city name"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            android:drawableStart="@drawable/ic_baseline_warehouse_24"-->
+
+        <!--                            />-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Fresher"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            android:drawableStart="@drawable/ic_baseline_star_outline_24"-->
+
+        <!--                            />-->
+        <!--                        <Button-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Apply"-->
+        <!--                            android:minHeight="10dp"-->
+        <!--                            android:textColor="@color/white"-->
+        <!--                            android:textAllCaps="false"-->
+        <!--                            android:background="@drawable/btndesign"-->
+        <!--                            android:layout_margin="10dp"-->
+        <!--                            android:padding="5dp"/>-->
+
+        <!--                    </LinearLayout>-->
+        <!--                </androidx.cardview.widget.CardView>-->
+
+        <!--            </LinearLayout>-->
+
+        <!--        </HorizontalScrollView>-->
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="10dp"-->
+        <!--            android:background="@color/white"-->
+        <!--            android:layout_marginTop="20dp"/>-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:text="Restaurant Staff / Kitchen Help/ Steward"-->
+        <!--            android:textColor="@color/purple_custom"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <HorizontalScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginHorizontal="8dp"-->
+
+        <!--                android:orientation="horizontal">-->
+
+
+        <!--                <androidx.cardview.widget.CardView-->
+        <!--                    android:layout_width="170dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    app:cardCornerRadius="2dp"-->
+        <!--                    android:layout_marginRight="10dp"-->
+        <!--                    android:layout_marginLeft="10dp">-->
+        <!--                    <LinearLayout-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:orientation="vertical"-->
+        <!--                        android:padding="5dp"-->
+        <!--                        >-->
+
+
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="₹10000/-"-->
+        <!--                            android:textSize="16dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:padding="5dp"-->
+        <!--                            android:textColor="@color/black"/>-->
+
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="match_parent"-->
+        <!--                            android:text="Waiter / Steward"-->
+        <!--                            android:textSize="16dp"-->
+        <!--                            android:ems="3"-->
+        <!--                            android:ellipsize="end"-->
+        <!--                            android:lines="1"-->
+        <!--                            android:padding="5dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:textColor="@color/black"/>-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Company name"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            />-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text=" city name"-->
+        <!--                            android:textSize="14dp"-->
+        <!--                            android:padding="2dp"-->
+
+
+        <!--                            android:drawableStart="@drawable/ic_baseline_warehouse_24"-->
+
+        <!--                            />-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Fresher"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:drawableStart="@drawable/ic_baseline_star_outline_24"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            />-->
+        <!--                        <Button-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Apply"-->
+        <!--                            android:minHeight="10dp"-->
+        <!--                            android:textColor="@color/white"-->
+        <!--                            android:textAllCaps="false"-->
+        <!--                            android:background="@drawable/btndesign"-->
+        <!--                            android:layout_margin="10dp"-->
+        <!--                            android:padding="5dp"/>-->
+
+        <!--                    </LinearLayout>-->
+        <!--                </androidx.cardview.widget.CardView>-->
+
+        <!--            </LinearLayout>-->
+
+        <!--        </HorizontalScrollView>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="Delivery Associsate"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvjobdiliverya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="Other Jobs"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvjobother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="70dp" />
+
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="10dp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:background="@color/white"/>-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:text="Receptionist / Front Office /Help Desk"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textColor="@color/purple_custom" />-->
+
+        <!--        <HorizontalScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:layout_marginHorizontal="8dp"-->
+        <!--                android:layout_marginBottom="70dp">-->
+
+
+        <!--                <androidx.cardview.widget.CardView-->
+        <!--                    android:layout_width="170dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    app:cardCornerRadius="2dp"-->
+        <!--                    android:layout_marginRight="10dp"-->
+        <!--                    android:layout_marginLeft="10dp">-->
+        <!--                    <LinearLayout-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:orientation="vertical"-->
+        <!--                        android:layout_margin="5dp">-->
+
+
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="₹12000/-"-->
+        <!--                            android:textSize="16dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:padding="5dp"-->
+        <!--                            android:textColor="@color/black"/>-->
+
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="match_parent"-->
+        <!--                            android:text="Receptionist"-->
+        <!--                            android:textSize="16dp"-->
+        <!--                            android:ems="3"-->
+        <!--                            android:ellipsize="end"-->
+        <!--                            android:lines="1"-->
+        <!--                            android:padding="5dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:textColor="@color/black"/>-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Company name"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            />-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text=" city name"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            android:drawableStart="@drawable/ic_baseline_warehouse_24"-->
+
+        <!--                            />-->
+        <!--                        <TextView-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Fresher"-->
+        <!--                            android:padding="2dp"-->
+
+        <!--                            android:textSize="14dp"-->
+        <!--                            android:drawableStart="@drawable/ic_baseline_star_outline_24"-->
+        <!--                            />-->
+        <!--                        <Button-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="Apply"-->
+        <!--                            android:minHeight="10dp"-->
+        <!--                            android:textColor="@color/white"-->
+        <!--                            android:textAllCaps="false"-->
+        <!--                            android:background="@drawable/btndesign"-->
+        <!--                            android:layout_margin="10dp"-->
+        <!--                            android:padding="5dp"/>-->
+
+        <!--                    </LinearLayout>-->
+        <!--                </androidx.cardview.widget.CardView>-->
+
+        <!--            </LinearLayout>-->
+
+        <!--        </HorizontalScrollView>-->
+    </LinearLayout>
+</ScrollView>
